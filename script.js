@@ -48,3 +48,29 @@ let count = 0
                 count=0;
                 document.getElementById("count").innerText = "คุณคลิกไปแล้ว " + count + " ครั้ง"
             }
+
+            document.getElementById("addBtn").onclick = function () {
+                let input = document.getElementById("taskInput")
+                let taskText = input.value.trim()
+
+                if (taskText !== "") {
+                    let li = document.createElement("li")
+                    li.textContent = taskText
+
+                    // คลิกเพื่อขีดฆ่า
+                    li.onclick = function () {
+                        li.classList.toggle("done")
+                    }
+
+                    // ปุ่มลบ
+                    let delBtn = document.createElement("button")
+                    delBtn.textContent = "ลบ"
+                    delBtn.onclick = function () {
+                        li.remove()
+                    }
+
+                    li.appendChild(delBtn)
+                    document.getElementById("taskList").appendChild(li)
+                    input.value = ""
+                }
+            }
