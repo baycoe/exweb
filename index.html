@@ -8,39 +8,47 @@
 </head>
 <body>
   <div class="container">
-    <h1>สวัสดีครับ <br> ขอต้อนรับเข้าสู่เว็บไซต์</h1>
+    <h1>
+      สวัสดีครับ <br>
+      ขอต้อนรับเข้าสู่เว็บไซต์
+    </h1>
 
+    <!-- กรอกชื่อ -->
     <input id="username" type="text" placeholder="กรุณากรอกชื่อของท่าน">
     <button id="entername">ทักทาย</button>
     <p id="showname"></p>
 
+    <!-- กรอกอายุ -->
     <input id="userage" type="text" placeholder="ระบุปีเกิด(ค.ศ.)">
     <button id="enterage">คำนวณ</button>
     <p id="showage"></p>
 
+    <!-- งานอดิเรก -->
     <input id="userhobbies" type="text" placeholder="งานอดิเรกของคุณคือ">
     <button id="enterhobbies">ยืนยัน</button>
     <p id="showhobbies"></p>
 
+    <!-- ปุ่มโชว์/ซ่อน -->
     <button id="secretBT">โชว์/ซ่อน</button>
     <p id="secret"></p>
 
+    <!-- ตัวนับคลิก -->
     <p id="count">คุณคลิกไปแล้ว 0 ครั้ง</p>
     <div class="click-buttons">
       <button id="countBT">คลิกฉัน!</button>
       <button id="resetBT">นับใหม่</button>
     </div>
 
-
-    <button id="profileBT">แสดงโปรไฟล์</button> <button id="closeprofile">ปิดข้อมูลที่แสดง</button>
+    <!-- โปรไฟล์ -->
+    <button id="profileBT">แสดงโปรไฟล์</button>
+    <button id="closeprofile">ปิดข้อมูลที่แสดง</button>
     <p id="profile"></p>
 
+    <!-- To-Do List -->
     <h2>รายการที่ต้องทำ</h2>
-
     <input id="taskInput" type="text" placeholder="เพิ่มงานที่นี่">
     <button id="addBtn">เพิ่ม</button>
     <ul id="taskList"></ul>
-
   </div>
 
   <script src="script.js"></script>
