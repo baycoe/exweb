@@ -91,11 +91,13 @@ p {
 }
 
 #secret {
+  display: none;
   background-color: #fef3c7;
   padding: 14px;
   border-radius: 10px;
   border-left: 5px solid #f59e0b;
   color: #78350f;
+  margin-top: 10px;
 }
 
 #count {
@@ -141,14 +143,4 @@ li button {
 
 li button:hover {
   background: #e74c3c;
-}
-
-#secret {
-  display: none;
-  background-color: #fef3c7;
-  padding: 14px;
-  border-radius: 10px;
-  border-left: 5px solid #f59e0b;
-  color: #78350f;
-  margin-top: 10px;
 }
